@@ -1,7 +1,7 @@
 # Practicando FreeCodeCamp
 
-En este repositorio se verá el contenido de las prácticas que estoy haciendo para repasar los conceptos y estructuras de HTML y CSS
+En este repositorio se verá el contenido de las prácticas y proyectos trabajando estructuras de HTML y CSS
 
-También estará el contenido de las prácticas para repasar los conceptos de JavaScript, Algoritmos y Análisis de Datos
+También estará el contenido de las prácticas proyectos de JavaScript, Algoritmos y Análisis de Datos
 
-Estas prácticas pertenecen a los cursos de FreeCodeCamp
+Estas prácticas y proyectos pertenecen a los cursos de FreeCodeCamp
