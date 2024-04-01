@@ -9,6 +9,11 @@ p {
   text-align: center;
 }
 
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
 .menu {
   width: 80%;
   background-color: burlywood;
