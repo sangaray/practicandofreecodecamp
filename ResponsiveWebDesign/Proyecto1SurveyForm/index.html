@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Profes Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Los Profes Survey Form</h1>
+    <p id="description">Help us to be better filling this survey</p>
+    <form id="survey-form">
+      <label for="name" id="name-label"
+        >Name:
+        <input type="text" id="name" placeholder="Your full name" required
+      /></label>
+      <label for="email" id="email-label"
+        >Email:<input type="email" id="email" placeholder="Your email" required
+      /></label>
+      <label for="number" id="number-label"
+        >How old are you?
+        <input type="number" id="number" min="11" max="100" placeholder="11"
+      /></label>
+      <label for="dropdown" id="school-level"
+        >Which school level are you assisting?
+        <select name="dropdown" id="dropdown">
+          <option value="primary-school" name="dropdown">Primary School</option>
+          <option value="high-school" name="dropdown">High School</option>
+          <option value="college" name="dropdown">College</option>
+        </select>
+      </label>
+      <label for="color"
+        >Which subject do you prefer? <input type="checkbox" value="1" />Maths
+        <input type="checkbox" value="2" />Science
+        <input type="checkbox" value="3" />English
+        <input type="checkbox" value="4" />Spanish
+        <input type="checkbox" value="5" />Art
+      </label>
+      <label for="help"
+        >Do you need help with your studies?
+        <input type="radio" name="help" id="yes" /> Yes
+        <input type="radio" name="help" id="no" /> No
+      </label>
+      <label for="support"
+        >Do you have support on your school?
+        <input type="radio" name="support" id="y" /> Yes
+        <input type="radio" name="support" id="n" /> No
+      </label>
+      <label for="comentario"
+        >Would you like to share anything else?
+        <textarea
+          name="comentario"
+          id="comentario"
+          cols="30"
+          rows="10"
+          placeholder="Let your comment"
+        ></textarea>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
