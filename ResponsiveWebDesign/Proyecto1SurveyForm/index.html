@@ -11,7 +11,6 @@
       <h1 id="title">Los Profes Survey Form</h1>
       <p id="description">Help us to be better filling this survey</p>
       <fieldset>
-        <legend>INFORMACIÓN PERSONAL</legend>
         <div class="form_input">
           <label for="name" id="name-label"
             >Name:
@@ -53,8 +52,8 @@
           </label>
         </div>
         <div class="form_input">
-          <label for="color" class="check-label"
-            >Which subject do you prefer?
+          <label class="align-label">Which subject do you prefer?</label><br />
+          <label for="color">
             <input type="checkbox" value="1" class="checkbox" />Maths
             <input type="checkbox" value="2" class="checkbox" />Science
             <input type="checkbox" value="3" class="checkbox" />English
@@ -63,21 +62,31 @@
           </label>
         </div>
         <div class="form_input">
+          <label class="align-label">Do you need help with your studies? </label
+          ><br />
           <label for="help"
-            >Do you need help with your studies?
-            <input type="radio" name="help" id="yes" /> Yes
-            <input type="radio" name="help" id="no" /> No
+            >Yes
+            <input type="radio" name="help" id="yes" />
+          </label>
+          <label for="help"
+            >No
+            <input type="radio" name="help" id="no" />
           </label>
         </div>
         <div class="form_input">
+          <label class="align-label">Do you have support on your school? </label
+          ><br />
           <label for="support"
-            >Do you have support on your school?
-            <input type="radio" name="support" id="y" /> Yes
-            <input type="radio" name="support" id="n" /> No
+            >Yes
+            <input type="radio" name="support" id="y" />
+          </label>
+          <label for="support"
+            >No
+            <input type="radio" name="support" id="n" />
           </label>
         </div>
         <div class="form_input">
-          <label for="comentario"
+          <label for="comentario" class="align-label"
             >Would you like to share anything else?
             <textarea
               name="comentario"

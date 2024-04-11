@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: linear-gradient(to bottom, #6e611ad7, #290202);
+  background: linear-gradient(to bottom, #6e611af1, #290202);
   color: #ddd;
 }
 
@@ -87,4 +87,25 @@ fieldset {
 legend {
   padding: 0 6px;
   color: #777;
+}
+
+.align-label {
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  min-width: 300px;
+}
+
+input[type="radio"] {
+  width: 10%;
+}
+
+.help,
+.support {
+  width: 49%;
 }
