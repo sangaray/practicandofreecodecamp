@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(to bottom, #b2030384, #efb76274);
+}
+
 .canvas {
   width: 500px;
   height: 600px;
