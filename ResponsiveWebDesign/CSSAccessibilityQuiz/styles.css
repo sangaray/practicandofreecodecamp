@@ -23,6 +23,10 @@ header {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 h1 {
@@ -60,9 +64,23 @@ p::before {
   content: "Question #";
 }
 
-nav > li {
+nav > ul > li {
   color: #dfdfe2;
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
+}
+
+nav > ul > li > a {
+  color: #dfdfe2;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
 }
