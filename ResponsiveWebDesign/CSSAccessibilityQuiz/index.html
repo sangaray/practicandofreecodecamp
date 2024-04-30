@@ -70,8 +70,27 @@
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS Questions</h2>
+          <div class="formrow">
+          <div class="question-block">
+            <label for="answer">Can the CSS margin property accept negative values?</label>
+          </div>
+          <div class="answer">
+            <select name="answer" id="answer" required>
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="question-block">
+            <label for="question">Do you have any questions:</label>
+          </div>
+          <div class="answer">
+            <textarea rows="5" cols="24" placeholder="Who is flexbox..." id="question" name="question"></textarea>
+          </div>
+          
         </section>
-      </form>
+        <input type="submit" value="Send">
+              </form>
     </main>
   </body>
 </html>
