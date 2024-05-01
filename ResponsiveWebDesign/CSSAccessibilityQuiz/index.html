@@ -3,49 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Esta página es parte de un ejercicio de FreeCodeCamp Responsive Web Design" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>This is a Practice Quiz</title>
   </head>
   <body>
     <header>
-      <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="" id="logo" />
+      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" />
       <h1>HTML/CSS Quiz</h1>
       <nav>
         <ul>
-          <li><a href="#student-info">INFO</a></li>
-          <li><a href="#html-questions">HTML</a></li>
-          <li><a href="#css-questions">CSS</a></li>
+          <li><a href="#student-info" accesskey="I">INFO</a></li>
+          <li><a href="#html-questions" accesskey="H">HTML</a></li>
+          <li><a href="#css-questions" accesskey="C">CSS</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
           <div class="info">
-            <label for="name">Student's Name</label><input type="text" id="name" name="student-name" />
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
           </div>
           <div class="info">
-            <label for="email">Email Address</label><input type="email" id="email" name="email-address" />
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
           </div>
           <div class="info">
             <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
-            ><input type="date" id="birthday" name="birth-date" />
+            <input type="date" name="birth-date" id="birth-date" />
           </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
-          <h2 id="html-questions">HTML Questions</h2>
+          <h2 id="html-questions">HTML</h2>
           <div class="question-block">
             <p>1</p>
-            <fieldset class="question" name="html">
+            <fieldset class="question" name="html-question-one">
               <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
               <ul class="answers-list">
                 <li>
-                  <label for="q1-a1"> <input type="radio" id="q1-a1" value="true" name="q1" /> True </label>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    True
+                  </label>
                 </li>
                 <li>
-                  <label for="q1-a2"> <input type="radio" id="q1-a2" value="false" name="q1" /> False </label>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    False
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -59,38 +67,50 @@
               </legend>
               <ul class="answers-list">
                 <li>
-                  <label for="q2-a1"> <input type="radio" id="q2-a1" value="true" name="q2" /> True </label>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    True
+                  </label>
                 </li>
                 <li>
-                  <label for="q2-a2"> <input type="radio" id="q2-a2" value="false" name="q2" /> False </label>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    False
+                  </label>
                 </li>
               </ul>
             </fieldset>
           </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
-          <h2 id="css-questions">CSS Questions</h2>
+          <h2 id="css-questions">CSS</h2>
           <div class="formrow">
-          <div class="question-block">
-            <label for="answer">Can the CSS margin property accept negative values?</label>
+            <div class="question-block">
+              <label for="selector">Can the CSS margin property accept negative values?</label>
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea
+                id="css-textarea"
+                name="css-questions"
+                rows="5"
+                cols="24"
+                placeholder="Who is flexbox..."
+              ></textarea>
+            </div>
           </div>
-          <div class="answer">
-            <select name="answer" id="answer" required>
-              <option value="">Select an option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </div>
-          <div class="question-block">
-            <label for="question">Do you have any questions:</label>
-          </div>
-          <div class="answer">
-            <textarea rows="5" cols="24" placeholder="Who is flexbox..." id="question" name="question"></textarea>
-          </div>
-          
         </section>
         <button type="submit">Send</button>
-              </form>
+      </form>
     </main>
     <footer>
       <address>
