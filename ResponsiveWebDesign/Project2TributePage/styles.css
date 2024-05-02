@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: #272117;
+  color: #fff;
+}
+
+.header {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/11/alan-rickman-2144427.jpg?tf=3840x");
+  display: flex;
+  background-size: cover;
+}
+
+.header__overlay {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #80562699;
+  position: absolute;
+  z-index: 1;
+}
+
+.header__item-container {
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  text-align: center;
+  max-width: 700px;
+  padding-top: 300px;
+  padding-right: 500px;
+  width: 60%;
+}
+
+.header__item-container p {
+  text-wrap: pretty;
+  width: 65%;
+}
+
+.header__item-container h1 {
+  padding-right: 245px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-wrap: balance;
+}
+
+.nav {
+  background-color: #272117;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* me gusta con space-evenly */
+  padding: 6px 20px; /* me gusta con padding-right 40px  */
+  border: 2px solid #efc653;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 0 25px #efc553b9;
+}
+
+.nav__ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__ul-container {
+  flex-grow: 4;
+}
+
+.nav__ul-container {
+  text-align: center;
+}
+
+.nav__link {
+  color: #efc653;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 10px 8px 10px;
+  margin: 6px;
+  border-radius: 0;
+  transition: background-color 0.24s, border-radius 0.2s outline 0.2 outline-offset 0.2;
+  margin: 2px;
+  outline: 0;
+  outline-offset: 0;
+  font-size: 1.5em;
+}
+
+.nav__link:hover {
+  background-color: #f803;
+  border-radius: 20px;
+  outline: 2px solid #f803;
+  outline-offset: -7px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  font-size: 20px;
+  text-wrap: pretty;
+}
+
+figure #image {
+  box-sizing: border-box;
+  max-width: 700px;
+  width: 100%;
+}
