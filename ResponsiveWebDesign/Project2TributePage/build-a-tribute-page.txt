@@ -1,3 +1,5 @@
+** start of undefined **
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,12 +12,6 @@
     <header class="header">
       <div class="header__overlay"></div>
       <div class="header__item-container">
-        <h1 id="title">Alan Rickman Tribute</h1>
-        <p id="tribute-info">
-          This page is a tribute to a great actor who left us so many good moments through his movies, even in dead he
-          will continue given us beautifull memories
-        </p>
-
       </div>
     </header>
     <nav class="nav">
@@ -29,7 +25,11 @@
       </div>
     </nav>
     <main id="main">
-
+        <h1 id="title">Alan Rickman Tribute</h1>
+        <p id="tribute-info">
+          This page is a tribute to a great actor who left us so many good moments through his movies, even in dead he
+          will continue given us beautifull memories
+        </p>
           <div class="img" id="img-div">
             <img
               src="https://m.media-amazon.com/images/M/MV5BMTUwNTc4MTg4Ml5BMl5BanBnXkFtZTcwNDY2MjkxOA@@._V1_.jpg"
@@ -242,3 +242,151 @@
     </main>
   </body>
 </html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: #272117;
+  color: #fff;
+}
+
+.header {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/11/alan-rickman-2144427.jpg?tf=3840x");
+  display: flex;
+  background-size: cover;
+}
+
+.header__overlay {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #80562699;
+  position: absolute;
+  z-index: 1;
+}
+
+.header__item-container {
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  text-align: center;
+  max-width: 700px;
+  padding-top: 300px;
+  padding-right: 500px;
+  width: 60%;
+}
+
+.header__item-container p {
+  text-wrap: pretty;
+  width: 65%;
+}
+
+.header__item-container h1 {
+  padding-right: 245px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-wrap: balance;
+}
+
+.nav {
+  background-color: #272117;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* me gusta con space-evenly */
+  padding: 6px 20px; /* me gusta con padding-right 40px  */
+  border: 2px solid #efc653;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 0 25px #efc553b9;
+}
+
+.nav__ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__ul-container {
+  flex-grow: 4;
+}
+
+.nav__ul-container {
+  text-align: center;
+}
+
+.nav__link {
+  color: #efc653;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 10px 8px 10px;
+  margin: 6px;
+  border-radius: 0;
+  transition: background-color 0.24s, border-radius 0.2s outline 0.2 outline-offset 0.2;
+  margin: 2px;
+  outline: 0;
+  outline-offset: 0;
+  font-size: 1.5em;
+}
+
+.nav__link:hover {
+  background-color: #f803;
+  border-radius: 20px;
+  outline: 2px solid #f803;
+  outline-offset: -7px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  font-size: 20px;
+  text-wrap: pretty;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image,
+#image2 {
+  width: 50%;
+}
+
+#image3 {
+  width: 70%;
+}
+
+#image {
+  max-width: 100%;
+}
+
+.list-items {
+  text-decoration: none;
+}
+
+#tribute-link {
+  color: #efc653;
+  text-decoration: none;
+}
+
+
+** end of undefined **
+
